@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="meta-description" name="description" content="Portfolio de Enric Artero Gomis, ingeniero informático orientado al desarrollo backend con C#, SQL y trabajo en entornos ágiles.">
+  <meta name="theme-color" content="#0b132b">
+  <meta id="meta-og-title" property="og:title" content="Enric Artero | Backend Engineer Portfolio">
+  <meta id="meta-og-description" property="og:description" content="Portfolio profesional con experiencia, stack técnico y CV descargable.">
+  <meta property="og:type" content="website">
+  <title id="page-title">Enric Artero | Backend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero" id="top">
+      <nav class="topbar">
+        <a class="brand" href="#top">
+          <span class="brand-mark">EA</span>
+          <span class="brand-copy">Enric Artero</span>
+        </a>
+        <div class="nav-links">
+          <a href="#projects" data-i18n="nav.proposal">Propuesta</a>
+          <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+          <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        </div>
+        <div class="cv-selector cv-selector-topbar" aria-label="Seleccionar idioma del portfolio y del CV">
+          <p class="cv-selector-label" data-i18n="language.selectorLabel">Portfolio y CV disponibles en tres idiomas</p>
+          <div class="language-tabs" role="tablist" aria-label="Idiomas disponibles">
+            <button class="language-tab is-active" type="button" role="tab" aria-selected="true" data-lang="cat">
+              <span class="flag flag-cat" aria-hidden="true"></span>
+              <span data-i18n="language.cat">Català</span>
+            </button>
+            <button class="language-tab" type="button" role="tab" aria-selected="false" data-lang="en">
+              <span class="flag flag-en" aria-hidden="true"></span>
+              <span data-i18n="language.en">English</span>
+            </button>
+            <button class="language-tab" type="button" role="tab" aria-selected="false" data-lang="es">
+              <span class="flag flag-es" aria-hidden="true"></span>
+              <span data-i18n="language.es">Castellano</span>
+            </button>
+          </div>
+          <p class="cv-helper" data-cv-label>Versión seleccionada: CV en castellano</p>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Portfolio / Backend Engineer</p>
+          <h1 data-i18n="hero.title">Construyo backend claro, mantenible y listo para crecer.</h1>
+          <p class="hero-text" data-i18n="hero.text">
+            Soy Enric Artero Gomis, ingeniero informático con experiencia en desarrollo backend con
+            C#, SQL, automatización de procesos administrativos y trabajo en equipos Scrum. Busco
+            seguir creciendo como profesional en entornos donde pueda aportar desde el primer día,
+            aprender de perfiles con experiencia y seguir formándome de forma constante.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" data-cv-link="view" href="assets/CV_EnricArtero_ES.pdf" target="_blank" rel="noreferrer" data-i18n="actions.viewCv">Ver CV</a>
+            <a class="button button-secondary" data-cv-link="download" href="assets/CV_EnricArtero_ES.pdf" download="CV_EnricArtero_ES.pdf" data-i18n="actions.downloadCv">Descargar CV</a>
+            <a class="button button-secondary" href="https://github.com/EnricArtero" target="_blank" rel="noreferrer" data-i18n="actions.openGithub">Abrir GitHub</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/enric-artero-gomis-358a7a398" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <ul class="hero-stats">
+            <li>
+              <strong>C#</strong>
+              <span data-i18n="stats.csharp">Backend y mantenimiento de servicios</span>
+            </li>
+            <li>
+              <strong>SQL</strong>
+              <span data-i18n="stats.sql">Consultas relacionales y lógica de datos</span>
+            </li>
+            <li>
+              <strong>Scrum</strong>
+              <span data-i18n="stats.scrum">Trabajo ágil y coordinación técnica</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal">
+          <p class="card-kicker" data-i18n="profile.kicker">Resumen rápido</p>
+          <div class="profile-block">
+            <h2 data-i18n="profile.title">Perfil profesional</h2>
+            <p data-i18n="profile.text">
+              Graduado en Ingeniería Informática, con una base sólida en backend,
+              aprendizaje rápido y una forma de trabajar muy orientada a la resolución estructurada
+              de problemas. Me interesa construir una trayectoria técnica sólida, con especial foco
+              en backend, buenas prácticas y mejora continua.
+            </p>
+          </div>
+          <dl class="profile-list">
+            <div>
+              <dt data-i18n="profile.location">Ubicación</dt>
+              <dd>Sant Joan Despí, Barcelona</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:enric.artero009@gmail.com">enric.artero009@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt data-i18n="profile.phone">Teléfono</dt>
+              <dd><a href="tel:+34686945996">+34 686 94 59 96</a></dd>
+            </div>
+            <div>
+              <dt data-i18n="profile.languagesLabel">Idiomas</dt>
+              <dd data-i18n="profile.languagesValue">Catalán y castellano nativo, inglés alto</dd>
+            </div>
+            <div>
+              <dt data-i18n="profile.profiles">Perfiles</dt>
+              <dd>
+                <a href="https://github.com/EnricArtero" target="_blank" rel="noreferrer">GitHub</a>
+                ·
+                <a href="https://www.linkedin.com/in/enric-artero-gomis-358a7a398" target="_blank" rel="noreferrer">LinkedIn</a>
+              </dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro reveal" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="proposal.eyebrow">Propuesta profesional</p>
+          <h2 data-i18n="proposal.title">Un perfil técnico con base sólida, actitud de aprendizaje y ambición de crecimiento.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card feature-card">
+            <p class="project-tag" data-i18n="proposal.cards.0.tag">Lo que puedo aportar</p>
+            <h3 data-i18n="proposal.cards.0.title">Trabajo con criterio, responsabilidad y orientación a la mejora</h3>
+            <p data-i18n="proposal.cards.0.text">
+              Me implico en entender los problemas, mantener el código claro y buscar soluciones
+              útiles para el negocio. Valoro el trabajo bien hecho, la constancia y la capacidad
+              de evolucionar técnicamente con cada proyecto.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="project-tag" data-i18n="proposal.cards.1.tag">Objetivo profesional</p>
+            <h3 data-i18n="proposal.cards.1.title">Seguir aprendiendo, crecer en equipo y ganar profundidad técnica</h3>
+            <p data-i18n="proposal.cards.1.text">
+              Busco oportunidades donde desarrollar una base técnica cada vez más fuerte, asumir
+              nuevos retos y seguir formándome en tecnologías, arquitectura y buenas prácticas de
+              desarrollo.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="project-tag" data-i18n="proposal.cards.2.tag">Forma de trabajar</p>
+            <h3 data-i18n="proposal.cards.2.title">Aprendizaje constante con mentalidad práctica</h3>
+            <p data-i18n="proposal.cards.2.text">
+              Me adapto rápido a nuevas herramientas, disfruto aprendiendo y me motiva convertir ese
+              aprendizaje en soluciones reales, mantenibles y bien comunicadas dentro del equipo.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section capabilities">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="strengths.eyebrow">Fortalezas</p>
+          <h2 data-i18n="strengths.title">La parte técnica y la parte humana van juntas.</h2>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <h3 data-i18n="strengths.items.0.title">Backend con criterio</h3>
+            <p data-i18n="strengths.items.0.text">Desarrollo y mantenimiento de servicios en C#, con foco en legibilidad, continuidad, automatización y mejora de procesos existentes.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3 data-i18n="strengths.items.1.title">Análisis y resolución</h3>
+            <p data-i18n="strengths.items.1.text">Me apoyo en un enfoque estructurado para encontrar soluciones eficientes y sostenibles, no solo rápidas.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3 data-i18n="strengths.items.2.title">Trabajo en equipo</h3>
+            <p data-i18n="strengths.items.2.text">Experiencia colaborando con metodología Scrum, participando en la coordinación diaria y en la comunicación técnica.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3 data-i18n="strengths.items.3.title">Adaptación rápida</h3>
+            <p data-i18n="strengths.items.3.text">Aprendo herramientas y entornos nuevos con facilidad, algo clave en equipos con producto vivo y prioridades cambiantes.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3 data-i18n="strengths.items.4.title">Formación en ciberseguridad</h3>
+            <p data-i18n="strengths.items.4.text">He realizado un pequeño curso de ciberseguridad, reforzando mi interés por desarrollar con una base más consciente en seguridad y buenas prácticas.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3 data-i18n="strengths.items.5.title">Orientación al detalle</h3>
+            <p data-i18n="strengths.items.5.text">Presto atención a la calidad de la implementación, la claridad del código y la consistencia general para construir soluciones más fiables.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3 data-i18n="strengths.items.6.title">Visión práctica</h3>
+            <p data-i18n="strengths.items.6.text">Me gusta conectar la parte técnica con la utilidad real de lo que se construye, priorizando soluciones que aporten valor y sean sostenibles.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3 data-i18n="strengths.items.7.title">Actitud de crecimiento</h3>
+            <p data-i18n="strengths.items.7.text">Afronto cada proyecto como una oportunidad para mejorar, adquirir criterio técnico y avanzar hacia perfiles de mayor responsabilidad.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="experience">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="experience.eyebrow">Experiencia</p>
+          <h2 data-i18n="experience.title">Trayectoria reciente</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date" data-i18n="experience.items.0.date">Abr 2025 - Ene 2026</div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.items.0.title">Desarrollador en prácticas · Easy Tech Global</h3>
+              <p data-i18n="experience.items.0.text">
+                Desarrollo y mantenimiento de servicios backend con C#, implementación de nuevas
+                funcionalidades, automatización de procesos administrativos para empresas y mejora de
+                procesos existentes dentro de un equipo organizado con Scrum.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date" data-i18n="experience.items.1.date">Jul 2022 - Jun 2023</div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.items.1.title">Comercial interno y soporte de gestión · Tronik Parts Distribution</h3>
+              <p data-i18n="experience.items.1.text">
+                Gestión de incidencias, coordinación logística y resolución de problemas operativos bajo
+                presión, reforzando capacidad organizativa y comunicación con cliente.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date" data-i18n="experience.items.2.date">Jul 2023 - Oct 2023</div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.items.2.title">Asistente en sala · La Tagliatella</h3>
+              <p data-i18n="experience.items.2.text">
+                Experiencia en atención al cliente en un entorno dinámico, consolidando adaptación,
+                trabajo en equipo y habilidades comunicativas.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section">
+        <div class="education-card reveal">
+          <p class="eyebrow" data-i18n="education.eyebrow">Educación</p>
+          <h2 data-i18n="education.title">Universidad de Barcelona</h2>
+          <p data-i18n="education.text">
+            Estudios en Ingeniería Informática, pendiente de entrega del TFG. Base sólida en programación,
+            diseño orientado a objetos y resolución de problemas.
+          </p>
+        </div>
+        <div class="skills-card reveal">
+          <p class="eyebrow" data-i18n="skills.eyebrow">Stack y fortalezas</p>
+          <ul class="chip-list">
+            <li>C#</li>
+            <li>SQL</li>
+            <li data-i18n="skills.items.0">POO</li>
+            <li data-i18n="skills.items.1">Buenas prácticas</li>
+            <li>Scrum</li>
+            <li data-i18n="skills.items.2">Ciberseguridad</li>
+            <li data-i18n="skills.items.3">Análisis</li>
+            <li data-i18n="skills.items.4">Comunicación</li>
+            <li data-i18n="skills.items.5">Adaptabilidad</li>
+            <li data-i18n="skills.items.6">Liderazgo</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">GitHub</p>
+          <h2 data-i18n="github.title">Proyectos personales y trabajo en evolución.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <p class="project-tag" data-i18n="github.cards.0.tag">Proyecto personal</p>
+            <h3><a href="https://github.com/EnricArtero/java-vue-calculator" target="_blank" rel="noreferrer">java-vue-calculator</a></h3>
+            <p data-i18n="github.cards.0.text">
+              En GitHub tengo publicado mi proyecto personal <strong>java-vue-calculator</strong>,
+              donde combino Java y Vue en un ejercicio práctico que refleja iniciativa personal,
+              ganas de seguir aprendiendo y motivación por construir software publicable.
+            </p>
+          </article>
+          <article class="project-card reveal">
+            <p class="project-tag" data-i18n="github.cards.1.tag">TFG</p>
+            <h3 data-i18n="github.cards.1.title">Trabajo de Fin de Grado en proceso de publicación</h3>
+            <p data-i18n="github.cards.1.text">
+              Estoy publicando mi TFG y, en cuanto esté completamente acabado, lo haré público para
+              incorporarlo también como parte destacada de este portfolio y seguir mostrando mi
+              evolución técnica con proyectos reales.
+            </p>
+          </article>
+          <article class="project-card reveal">
+            <p class="project-tag" data-i18n="github.cards.2.tag">Enfoque</p>
+            <h3 data-i18n="github.cards.2.title">GitHub como carta de presentación</h3>
+            <p data-i18n="github.cards.2.text">
+              Mi objetivo es que el repositorio muestre no solo código funcional, sino también
+              evolución, criterio técnico y capacidad para llevar una idea hasta una versión visible.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section reveal" id="contact">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+        <h2 data-i18n="contact.title">Disponible para oportunidades donde aportar, aprender y crecer como desarrollador.</h2>
+        <p class="contact-copy" data-i18n="contact.text">
+          Estoy especialmente interesado en seguir formándome dentro de equipos donde pueda mejorar
+          mi base técnica, asumir responsabilidad progresiva y crecer con proyectos reales.
+        </p>
+        <p class="contact-cv-note" data-cv-label>Versión seleccionada: CV en castellano</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:enric.artero009@gmail.com" data-i18n="contact.writeMe">Escribirme</a>
+          <a class="button button-secondary" data-cv-link="view" href="assets/CV_EnricArtero_ES.pdf" target="_blank" rel="noreferrer" data-i18n="actions.viewCv">Ver CV</a>
+          <a class="button button-secondary" data-cv-link="download" href="assets/CV_EnricArtero_ES.pdf" download="CV_EnricArtero_ES.pdf" data-i18n="actions.downloadCv">Descargar CV</a>
+          <a class="button button-secondary" href="https://github.com/EnricArtero" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/enric-artero-gomis-358a7a398" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
